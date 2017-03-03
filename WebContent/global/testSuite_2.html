@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+      .show {display: none; }
+      .hide:focus + .show {display: inline; }
+      .hide:focus { display: none; }
+      .hide:focus ~ #list { display:none; }
+     @media print { .hide, .show { display: none; } }
+   </style>
+</head>
+<body>
+<button>Add Test Suite</button>&nbsp;&nbsp;&nbsp;<button>Delete Test Suite</button><br><br>
+
+				<table border=1>
+				<tr>
+						<th>Select</th>
+						<th>Test Suite</th>
+						<th>Description</th>
+						<th>Owner</th>
+						<th>Area Owned</th>
+						<th>Assigned to</th>
+						<th>Status</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>Test Suite_1</td>
+					<td>Create ZQT1 Quotation</td>
+					<td>Mahender Kumar</td>
+					<td>OTO</td>
+					<td>Rajesh Paturu</td>
+					<td>Open</td>
+				</tr>
+				</table> 
+
+
+<!--  <p>Test Suite_1</p> -->
+      <div>
+         <a href="#" class="hide">[hide]</a>
+         <a href="#" class="show">[show]</a>
+         
+          <ol id="list"> 
+            <table border="1">
+				  <tr>
+				    <th>Test Suite Steps</th>
+				    <th>Description</th>
+				  </tr>
+				  <tr>
+				    <td>Step 1</td>
+				    <td>Bid Manager goes to Interaction Center will initiate the creation of the SAP quote (ZQT1). <br>
+				     The user is required to enter: organizational data, partners, identify the end user customer, <br>
+				      adds the IBM contact as member of the sales team, and payment method "7" (cash). <br>
+				       In addition sets the 'Consolidated Invoice Indicator' on the quote (in the Billing section).</td>
+				  </tr>
+				  <tr>
+				    <td>Step 2</td>
+				    <td>Bid Manager invokes eConfig (disconnected) to configure the Power New Box with storage peripheral,<br>
+				     CSW and SWMA products.Then saves a CFReport ouput.Note: Disconnected eConfig lists the entire catalog.<br>
+				     Note that the 6942TSS, 6942xxx (which are used for ISAT / CHIS) are not generated in eConfig for CND. <br>
+				     Therefore, the function to send the products to ISAT / CHIS is not in place for CND.</td>
+				  </tr>
+				  <tr>
+				    <td>Step 3</td>
+				    <td>For the new Box configuration: No pull of Base required.<br>
+				       E-config only shows list price.  E config creates CFReport and CFXML.</td>
+				  </tr>
+			</table>
+        </ol> 
+      </div>
+      
+      <table border=1>
+				<tr>
+						<th>Select</th>
+						<th>Test Suite</th>
+						<th>Description</th>
+						<th>Owner</th>
+						<th>Area Owned</th>
+						<th>Assigned to</th>
+						<th>Status</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>Test Suite_2</td>
+					<td>Configure Products and process Sales Quotation</td>
+					<td>Mahender Kumar</td>
+					<td>OTO</td>
+					<td>Rajesh Paturu</td>
+					<td>Open</td>
+				</tr>
+				</table>
+				<div>
+         <a href="#" class="hide">[hide]</a>
+         <a href="#" class="show">[show]</a>
+         
+          <ol id="list"> 
+            <table border="1">
+				  <tr>
+				    <th>Test Suite Steps</th>
+				    <th>Description</th>
+				  </tr>
+				  <tr>
+				    <td>Step 1</td>
+				    <td>Bid Manager goes to Interaction Center will initiate the creation of the SAP quote (ZQT1). <br>
+				     The user is required to enter: organizational data, partners, identify the end user customer, <br>
+				      adds the IBM contact as member of the sales team, and payment method "7" (cash). <br>
+				       In addition sets the 'Consolidated Invoice Indicator' on the quote (in the Billing section).</td>
+				  </tr>
+				  <tr>
+				    <td>Step 2</td>
+				    <td>Bid Manager invokes eConfig (disconnected) to configure the Power New Box with storage peripheral,<br>
+				     CSW and SWMA products.Then saves a CFReport ouput.Note: Disconnected eConfig lists the entire catalog.<br>
+				     Note that the 6942TSS, 6942xxx (which are used for ISAT / CHIS) are not generated in eConfig for CND. <br>
+				     Therefore, the function to send the products to ISAT / CHIS is not in place for CND.</td>
+				  </tr>
+				  <tr>
+				    <td>Step 3</td>
+				    <td>For the new Box configuration: No pull of Base required.<br>
+				       E-config only shows list price.  E config creates CFReport and CFXML.</td>
+				  </tr>
+			</table>
+        </ol> 
+      </div> 
+</body>
+</html>

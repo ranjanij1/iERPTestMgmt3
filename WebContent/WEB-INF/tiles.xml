@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/tiles/BaseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/tiles/header.jsp" />
+		<put-attribute name="menu" value="/tiles/frame_left.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/tiles/footer.jsp" />
+ 
+	</definition>
+	<definition name="/welcome.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Welcome page" />
+		<put-attribute name="body" value="/Welcome.jsp" />
+	</definition>
+	<definition name="/error.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Error page" />
+		<put-attribute name="body" value="/Error.jsp" />
+	</definition>
+	
+	<!-- For Login Page -->
+	<definition name="login_screen" extends="baseLayout">
+		<put-attribute name="title" value="Test Management Login Page" />
+		<put-attribute name="body" value="/login.jsp" />
+		<put-attribute name="menu" value="" />
+	</definition>
+	
+	
+	<!-- For Login Page -->
+	<definition name="builder_screen" extends="baseLayout">
+		<put-attribute name="title" value="Test Management Builder Page" />
+		<put-attribute name="body" value="This is a test management website " />
+		<put-attribute name="menu" value="/tiles/builder_menu.jsp" />
+	</definition>
+	
+</tiles-definitions>
